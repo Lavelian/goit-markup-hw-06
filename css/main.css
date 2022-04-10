@@ -739,7 +739,7 @@ img {
 }
 
 .form-field {
-  /* outline: solid black; */
+
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
@@ -762,7 +762,7 @@ img {
 
 
 .modal-form {
-  /* outline: solid red; */
+
   min-width: 528px;
   min-height: 581px;
   padding: 40px;
@@ -794,7 +794,7 @@ img {
 }
 
 .label-condition {
-  outline: solid red;
+  
 
   display: flex;
   align-items: center;
