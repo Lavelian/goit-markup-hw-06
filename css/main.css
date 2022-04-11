@@ -773,6 +773,7 @@ img {
   margin-bottom: 4px;
 }
 
+
 .form-input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 2px;
@@ -780,17 +781,32 @@ img {
   width: 100%;
   padding-left: 42px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 40px;
 
+}
+.form-textarea{
+  margin-bottom: 20px;
+  
+  display: flex;
+  flex-direction: column;
 }
 
 .input-textarea {
   resize: none;
-  width: 448px;
+  width: 100%;
   padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 2px;
+  
+  
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-textaria {
-  margin-bottom: 20px;
+
+
+.input-textarea:focus,
+.input-textarea:hover {
+  border: 1px solid var(--acent-color-text);
 }
 
 .label-condition {
@@ -818,13 +834,24 @@ img {
 
 }
 
-.check-condition:checked+.checkbox-icon {
+.check-condition:checked + .checkbox-icon {
   background-color: #2196F3;
 
   background-image: url(../Images/check.svg);
   background-size: contain;
   background-origin: border-box;
   border-color: #2196F3;
+  background-repeat: no-repeat;
+}
+
+.check-condition:focus + .checkbox-icon {
+  background-color: #2196F3;
+
+  background-image: url(../Images/check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color:  var(--acent-color-button-background);
+  background-repeat: no-repeat;
 }
 
 .check-condition {
@@ -837,7 +864,7 @@ img {
   min-width: 200px;
   min-height: 50px;
   background-color: #2196F3;
-  ;
+  
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
@@ -878,10 +905,13 @@ img {
   border: 1px solid var(--acent-color-text);
 }
 
-.form-input:focus,
-.form-input:hover+.modal-icon {
-  fill: #2196F3;
+.form-input:focus
+ + .modal-icon {
+  fill: var(--acent-color-button-background);
 }
+
+
+ 
 
 /* Портфолио */
 
